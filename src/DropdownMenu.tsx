@@ -70,7 +70,7 @@ export function useDropdownMenu(options: UseDropdownMenuOptions = {}) {
   }
 
   const handleClose = (e: React.SyntheticEvent | Event) => {
-    context?.toggle(false, e);
+    context?.toggle(e);
   };
 
   const { drop, setMenu, menuElement, toggleElement } = context || {};
